@@ -5,8 +5,12 @@ let profileDataArgs = process.argv.slice(2, process.argv.length);
 // console.log(animalArray);
 
 
-const printProfileDataArgs = (ProfileDataArgs) => {
-    console.log(profileDataArgs);
-}
+const printProfileDataArgs = ProfileDataArgs => {
+    for (let i = 0; i < profileDataArgs.length; i++) {
+        
+        console.log(profileDataArgs[i]);
+        
+    }
+};
 
 printProfileDataArgs(profileDataArgs);
