@@ -1,6 +1,12 @@
-let message = 'hello node';
+let profileDataArgs = process.argv.slice(2, process.argv.length);
 
-let sum = 2 + 2;
+// const animalArray = ['dog', 'cat', 'your mom'];
+// animalArray.push('cow, aka your mom again');
+// console.log(animalArray);
 
-console.log(message);
-console.log(sum);
+
+const printProfileDataArgs = (ProfileDataArgs) => {
+    console.log(profileDataArgs);
+}
+
+printProfileDataArgs(profileDataArgs);
