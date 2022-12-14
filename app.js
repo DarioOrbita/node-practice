@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 // const animalArray = ['dog', 'cat', 'your mom'];
@@ -33,3 +35,8 @@ const generatePage = (name, github) => {
 }
 
 console.log(generatePage(name, github));
+
+fs.writeFile('index.htm', generatePage(name, github), err => {
+    if(err) throw(err);
+    console.log('done!');
+});
