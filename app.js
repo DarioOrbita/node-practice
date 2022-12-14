@@ -6,11 +6,9 @@ let profileDataArgs = process.argv.slice(2, process.argv.length);
 
 
 const printProfileDataArgs = ProfileDataArgs => {
-    for (let i = 0; i < profileDataArgs.length; i++) {
-        
-        console.log(profileDataArgs[i]);
-        
-    }
+    profileDataArgs.forEach((item) => {
+        console.log(item);
+    });
 };
 
 printProfileDataArgs(profileDataArgs);
